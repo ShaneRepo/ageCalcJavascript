@@ -17,10 +17,18 @@ function calcAge() {
         var yearCalc = (today.getFullYear() - userBDAY.getFullYear()) - 1;
         outputYear.value = (today.getFullYear() - userBDAY.getFullYear()) - 1;
         outputMonth.value = (yearCalc * 12) + monthCalc;
+        var dayCalc = (yearCalc * 365);
+        outputDay.value = dayCalc;
+        var hourCalc = dayCalc * 24;
+        outputHours.value = hourCalc;
     } else {
         var yearCalc2 = (today.getFullYear() - userBDAY.getFullYear());
         outputYear.value = today.getFullYear() - userBDAY.getFullYear();
         outputMonth.value = (yearCalc2 * 12) - monthCalc;
+        var dayCalc2 = (yearCalc2 * 365) - monthCalc;
+        outputDay.value = dayCalc2;
+        var hourCalc2 = dayCalc2 * 24;
+        outputHours.value = hourCalc2;
     }
 
 
