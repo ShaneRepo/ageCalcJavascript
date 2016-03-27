@@ -21,6 +21,8 @@ function calcAge() {
         outputDay.value = dayCalc;
         var hourCalc = dayCalc * 24;
         outputHours.value = hourCalc;
+        var minCalc = hourCalc * 60;
+        outputMinutes.value = minCalc;
     } else {
         var yearCalc2 = (today.getFullYear() - userBDAY.getFullYear());
         outputYear.value = today.getFullYear() - userBDAY.getFullYear();
@@ -29,6 +31,8 @@ function calcAge() {
         outputDay.value = dayCalc2;
         var hourCalc2 = dayCalc2 * 24;
         outputHours.value = hourCalc2;
+        var minCalc2 = hourCalc2 * 60;
+        outputMinutes.value = minCalc2;
     }
 
 
