@@ -11,8 +11,12 @@ function calcAge() {
     var userBDAY = new Date(userYear,userMonth,userDay);
 
 
+    if (userBDAY.getMonth() > today.getMonth()){
+        outputYear.value = (today.getFullYear() - userBDAY.getFullYear()) - 1;
+    } else {
+        outputYear.value = today.getFullYear() - userBDAY.getFullYear();
+    }
 
-    outputYear.value = today.getFullYear() - userYear;
 
 }
 
